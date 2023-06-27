@@ -30,6 +30,7 @@ body {
   background-repeat: none;
   background-position:top center;
   background-size: cover;
+  height: 100vh;
  /*values*/
 
   font-family: 'Inter', sans-serif;
@@ -40,6 +41,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 36rem;
+
   padding-top: 5.6rem;
   margin: auto;
 }
@@ -53,12 +55,14 @@ body {
 }
 .profile img {
   width: 11rem;
+  align-items: center;
 }
 .profile p {
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  align-items: center;
 }
 /*Button-switch*/
 .button-content {
@@ -95,21 +99,25 @@ span{
   border-radius: 99.99rem;
 }
 /*button-links*/
-ul {
+ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding:2.4rem;
-  gap: 1.6rem;
   list-style: none;
+  width: 36rem;
+  gap: 1.6rem;
+}
+ul li {
+  width: 100%;
 }
 ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.6rem 2.4rem;
-  width: 31rem;
+  padding:1.6rem 2.4rem;
+  
   
   /*style*/
   color: var(--text-color);
@@ -153,4 +161,14 @@ li a:hover {
   line-height: 2.4rem;
   align-items: center;
   padding: 2.4rem;
+}
+/*Media queries*/
+
+@media (min-widht: 70rem) {
+  :root {
+    --bg-url: url(/assets/bg-desktop-dark.jpg)
+  }
+  .light-mode {
+    --bg-url: url(/assets/bg-desktop-light.jpg)
+  }
 }
