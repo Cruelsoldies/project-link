@@ -169,10 +169,10 @@ li a:hover {
 
 @media (min-widht: 70rem) {
   :root {
-    --bg-url: url(/assets/bg-desktop-dark.jpg)
+    --bg-url: url(./assets/bg-desktop-dark.jpg)
   }
   .light-mode {
-    --bg-url: url(/assets/bg-desktop-light.jpg)
+    --bg-url: url(./assets/bg-desktop-light.jpg)
   }
 }
 /*animation*/
