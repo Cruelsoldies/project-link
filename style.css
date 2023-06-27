@@ -82,11 +82,14 @@ body {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-back 0.2s;
  
 }
+.button-color:hover {
+  outline: 8px solid var(--surface-color-hover);
+}
 .light-mode .button-color {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 /*span-button*/
 span{
@@ -170,5 +173,22 @@ li a:hover {
   }
   .light-mode {
     --bg-url: url(/assets/bg-desktop-light.jpg)
+  }
+}
+/*animation*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
